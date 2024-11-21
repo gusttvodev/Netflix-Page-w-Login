@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil, assistir a séries online, assistir a filme online </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon"  href="assets/imgs/favicon.png">
+    <script>
+        function login() {
+        window.location.href = "login.html";
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="assets/imgs/netflixlogo.png" class="logo" alt="Netflix">
+        <div class="header_right">
+        <select name="dropdown" id="dropdown">
+            <option>Português</option>
+            <option>English</option>
+        </select>
+        <button id="submit" onclick="login()">
+            Entrar
+        </button>
+        </div>
+        <div class="page_center">
+            <h2>Filmes, séries e muito <br> mais, sem limites</h2>
+            <strong>A partir de R$ 20,90. Cancele quando quiser.</strong>
+            <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <input type="email" required name="email" id="email" placeholder="Email">
+            <button id="submit_sign">Vamos lá</button>
+        </div>
+    </header>
+    <section>
+        <div class="feature">
+            <div class="popcorn">
+                <div id="img_popcorn">
+                    <img src="assets/imgs/popcorn.png" alt="popcorn">
+                </div>
+                <div id="popcorn_text">
+                    <p id="text_1">A Netflix que você adora por apenas R$ 20,90.</p>
+                    <p id="text_2">Aproveite nossa opção mais acessível, o plano com anúncios.</p>
+                </div>
+                <div id="submit_popcorn">
+                    <button>
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+            <div class="films">
+                <h2 id="h2_films">Em alta</h2>
+                <select name="films" id="dropdown_global">
+                    <option value="Brasil">Brasil</option>
+                    <option value="Global">Global</option>
+                </select>
+                <select name="series" id="dropdown_global">
+                    <option value="Filmes">Filmes</option>
+                    <option value="Series">Series</option>
+                </select>
+            </div>
+            <div class="top_films">
+                <img src="assets/imgs/films_top1.png" alt="TOP 1">
+                <img src="assets/imgs/films_top2.png" alt="Top 2">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
